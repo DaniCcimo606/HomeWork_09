@@ -1,0 +1,40 @@
+body {
+    .container {
+        .footer-wrap {
+            background-color: #eee;
+            .footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 75px;
+                padding: 51px 0;
+                border-top: 1px solid black;
+                .flex-wrap {
+                    gap: 14px;
+                    align-items: center;
+                    .footer__logo-wrap {
+                        svg {
+                            
+                        }
+                    }
+                    .footer__description {
+                        width: 50%;
+                        p {
+                            display: block;
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+                    }
+                }
+                .footer__license {
+                    padding-right: 75px;
+                    span {
+                        display: block;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

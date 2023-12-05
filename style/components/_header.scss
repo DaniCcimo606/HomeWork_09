@@ -1,0 +1,69 @@
+body {
+    .container {
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 75px;
+            border-bottom: 1px solid #ccc;
+            .flex-wrap {
+                gap: 51px;
+                .header__logo-wrap {
+                    svg {
+    
+                    }
+                }
+                .header__nav {
+                    .header__nav--list {
+                        display: flex;
+                        gap: 51px;
+                        align-items: center;
+                        height: 100%;
+                        .header__nav--item {
+                            .header__nav--link {
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+            .header__access {
+                .header__access--btns-wrap {
+                    display: flex;
+                    gap: 10px;
+                    .header__access--btn {
+                        position: relative;
+                        display: block;
+                        padding: 22px 60px;
+                        color: black;
+                    }
+                    #login {
+                        border: 1px solid black;
+                        &::before {
+                            content: 'Log in';
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-weight: 600;
+                        }
+                    }
+                    #register {
+                        background-color: #FF6336;
+                        &::before {
+                            content: 'Try it free';
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-weight: 600;
+                            white-space: nowrap;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
