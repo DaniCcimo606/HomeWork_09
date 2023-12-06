@@ -64,9 +64,7 @@ body {
                             width: 60%;
                             margin: 0 auto;
                             text-align: center;
-                            font-size: 50px;
-                            font-weight: 600;
-                            line-height: 60px;
+                            @include font(50px,600,60px);
                         }
                     }
                     .company-wrap {
