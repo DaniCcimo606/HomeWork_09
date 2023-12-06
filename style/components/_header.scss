@@ -8,11 +8,6 @@ body {
             border-bottom: 1px solid #ccc;
             .flex-wrap {
                 gap: 51px;
-                .header__logo-wrap {
-                    svg {
-    
-                    }
-                }
                 .header__nav {
                     .header__nav--list {
                         display: flex;
@@ -42,10 +37,7 @@ body {
                         border: 1px solid black;
                         &::before {
                             content: 'Log in';
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
+                            @include positionCenter;
                             font-weight: 600;
                         }
                     }
@@ -53,10 +45,7 @@ body {
                         background-color: #FF6336;
                         &::before {
                             content: 'Try it free';
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
+                            @include positionCenter;
                             font-weight: 600;
                             white-space: nowrap;
                             color: white;
