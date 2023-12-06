@@ -307,7 +307,7 @@ body .main .container .main__item:nth-child(8) .main__item--block {
   width: 60%;
   padding-bottom: 25px;
 }
-body .main .container .main__item:nth-child(8) .main__item--block h2 {
+body .main .container .main__item:nth-child(8) .main__item--block .title-wrap h2 {
   text-align: center;
   font-size: 65px;
   font-weight: 600;
@@ -323,7 +323,8 @@ body .main .container .main__item:nth-child(8) .main__item--block p {
 body .main .container .main__item:nth-child(8) .img-wrap {
   padding-bottom: 30px;
 }
-body .main .container .main__item:nth-child(8) a {
+body .main .container .main__item:nth-child(8) .link-wrap a {
+  display: block;
   padding: 0 20px;
   font-weight: 600;
   line-height: 60px;
@@ -337,16 +338,18 @@ body .main .container .main__item:nth-child(9) {
   padding: 120px 75px 160px;
   background-color: #FF9C7D;
 }
-body .main .container .main__item:nth-child(9) h2 {
+body .main .container .main__item:nth-child(9) .title-wrap h2 {
   font-size: 65px;
   font-weight: 600;
+  line-height: 75px;
 }
 body .main .container .main__item:nth-child(9) p {
   padding: 30px 0 55px;
   font-size: 20px;
   line-height: 30px;
 }
-body .main .container .main__item:nth-child(9) a {
+body .main .container .main__item:nth-child(9) .link-wrap a {
+  display: block;
   padding: 0 40px;
   font-size: 17px;
   font-weight: 600;
