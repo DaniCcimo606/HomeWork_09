@@ -181,11 +181,15 @@ body .main .container .main__item:nth-child(3) .main__item--block .description a
 body .main .container .main__item:nth-child(4) {
   flex-direction: column;
   gap: 55px;
+  align-items: center;
   padding: 120px 75px 150px;
   background-color: #FFF8E4;
 }
-body .main .container .main__item:nth-child(4) h2 {
-  margin: 0 auto;
+body .main .container .main__item:nth-child(4) .title-wrap {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .main .container .main__item:nth-child(4) .title-wrap h2 {
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
@@ -198,7 +202,6 @@ body .main .container .main__item:nth-child(4) .block .main__item--block {
   display: flex;
   flex-direction: column;
   gap: 23px;
-  justify-content: center;
   align-items: center;
   width: 33.3333333333%;
 }

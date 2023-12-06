@@ -103,13 +103,14 @@ body {
                 &:nth-child(4) {
                     flex-direction: column;
                     gap: 55px;
+                    align-items: center;
                     padding: 120px 75px 150px;
                     background-color: #FFF8E4;
-                    h2 {
-                        margin: 0 auto;
-                        font-size: 50px;
-                        font-weight: 600;
-                        line-height: 60px;
+                    .title-wrap {
+                        width: fit-content;
+                        h2 {
+                            @include font(50px,600,60px);
+                        }
                     }
                     .block {
                         display: flex;
@@ -118,16 +119,13 @@ body {
                             display: flex;
                             flex-direction: column;
                             gap: 23px;
-                            justify-content: center;
                             align-items: center;
                             width: calc(100%/3);
-                            .picture-wrap {
+                            .img-wrap {
     
                             }
                             h3 {
-                                font-size: 25px;
-                                font-weight: 600;
-                                line-height: 35px;
+                                @include font(25px,600,35px);
                             }
                             p {
                                 font-size: 18px;
