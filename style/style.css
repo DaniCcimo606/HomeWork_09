@@ -72,24 +72,24 @@ body .main .container .main__item {
   display: flex;
 }
 body .main .container .main__item:nth-child(1) {
-  padding-bottom: 170px;
+  padding: 130px 75px 170px;
 }
-body .main .container .main__item:nth-child(1) .description {
+body .main .container .main__item:nth-child(1) .main__item--block {
   display: flex;
   flex-direction: column;
   gap: 51px;
   padding-right: 20px;
 }
-body .main .container .main__item:nth-child(1) .description h2 {
+body .main .container .main__item:nth-child(1) .main__item--block h2 {
   font-size: 65px;
   font-weight: 600;
   line-height: 70px;
 }
-body .main .container .main__item:nth-child(1) .description p {
+body .main .container .main__item:nth-child(1) .main__item--block p {
   font-size: 25px;
   line-height: 35px;
 }
-body .main .container .main__item:nth-child(1) .description .btn-wrap a {
+body .main .container .main__item:nth-child(1) .main__item--block .link-wrap a {
   position: relative;
   display: inline-block;
   width: -moz-fit-content;
@@ -97,11 +97,11 @@ body .main .container .main__item:nth-child(1) .description .btn-wrap a {
   padding: 30px 80px;
   color: black;
 }
-body .main .container .main__item:nth-child(1) .description .btn-wrap #register {
+body .main .container .main__item:nth-child(1) .main__item--block .link-wrap #register {
   margin-right: 10px;
   background-color: #FF6336;
 }
-body .main .container .main__item:nth-child(1) .description .btn-wrap #register::before {
+body .main .container .main__item:nth-child(1) .main__item--block .link-wrap #register::before {
   content: "Try it free";
   position: absolute;
   top: 50%;
@@ -109,10 +109,10 @@ body .main .container .main__item:nth-child(1) .description .btn-wrap #register:
   transform: translate(-50%, -50%);
   font-weight: 600;
 }
-body .main .container .main__item:nth-child(1) .description .btn-wrap #demoBuy {
+body .main .container .main__item:nth-child(1) .main__item--block .link-wrap #demoBuy {
   border: 1px solid black;
 }
-body .main .container .main__item:nth-child(1) .description .btn-wrap #demoBuy::before {
+body .main .container .main__item:nth-child(1) .main__item--block .link-wrap #demoBuy::before {
   content: "Book a demo";
   position: absolute;
   top: 50%;
@@ -121,7 +121,7 @@ body .main .container .main__item:nth-child(1) .description .btn-wrap #demoBuy::
   font-weight: 600;
   white-space: nowrap;
 }
-body .main .container .main__item:nth-child(1) .description .btn-wrap span {
+body .main .container .main__item:nth-child(1) .main__item--block .link-wrap span {
   display: block;
   padding-top: 25px;
   font-size: 15px;

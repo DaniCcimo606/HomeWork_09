@@ -12,3 +12,16 @@ body {
 .flex-wrap {
     display: flex;
 }
+
+@mixin font($fsz, $fw, $lh) {
+    font-size: $fsz;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin positionCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

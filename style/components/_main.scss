@@ -5,22 +5,20 @@ body {
                 padding: 0 75px;
                 display: flex;
                 &:nth-child(1) {
-                    padding-bottom: 170px;
-                    .description {
+                    padding: 130px 75px 170px;
+                    .main__item--block {
                         display: flex;
                         flex-direction: column;
                         gap: 51px;
                         padding-right: 20px;
                         h2 {
-                            font-size: 65px;
-                            font-weight: 600;
-                            line-height: 70px;
+                            @include font(65px, 600, 70px);
                         }
                         p {
                             font-size: 25px;
                             line-height: 35px;
                         }
-                        .btn-wrap {
+                        .link-wrap {
                             a {
                                 position: relative;
                                 display: inline-block;
@@ -33,10 +31,7 @@ body {
                                 background-color: #FF6336;
                                 &::before {
                                     content: 'Try it free';
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 50%;
-                                    transform: translate(-50%, -50%);
+                                    @include positionCenter;
                                     font-weight: 600;
                                 }
                             }
@@ -44,10 +39,7 @@ body {
                                 border: 1px solid black;
                                 &::before {
                                     content: 'Book a demo';
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 50%;
-                                    transform: translate(-50%, -50%);
+                                    @include positionCenter;
                                     font-weight: 600;
                                     white-space: nowrap;
                                 }
@@ -58,11 +50,6 @@ body {
                                 font-size: 15px;
                                 line-height: 25px;
                             }
-                        }
-                    }
-                    .img {
-                        svg {
-
                         }
                     }
                 }
