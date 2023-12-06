@@ -369,7 +369,7 @@ body .main .container .main__item:nth-child(10) .main__theme {
   width: min-content;
   padding-right: 140px;
 }
-body .main .container .main__item:nth-child(10) .main__theme h2 {
+body .main .container .main__item:nth-child(10) .main__theme .title-wrap h2 {
   font-size: 40px;
   font-weight: 600;
   line-height: 50px;
@@ -379,7 +379,7 @@ body .main .container .main__item:nth-child(10) .main__theme .description p {
   font-size: 20px;
   line-height: 30px;
 }
-body .main .container .main__item:nth-child(10) .main__theme .description a {
+body .main .container .main__item:nth-child(10) .main__theme .description .link-wrap a {
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;

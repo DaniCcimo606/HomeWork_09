@@ -204,9 +204,6 @@ body {
                             &:first-child {
                                 border-left: 1px solid black;
                             }
-                            .logo-wrap {
-                                
-                            }
                             .rating {
                                 padding: 20px 0 15px 0;
                             }
@@ -239,9 +236,6 @@ body {
                     }
                     .img-wrap {
                         padding-bottom: 30px;
-                        img {
-
-                        }
                     }
                     .link-wrap {
                         a {
@@ -289,33 +283,23 @@ body {
                         gap: 30px;
                         width: min-content;
                         padding-right: 140px;
-                        h2 {
-                            font-size: 40px;
-                            font-weight: 600;
-                            line-height: 50px;
-                        }
-                        .img-wrap {
-                            img {
-
+                        .title-wrap {
+                            h2 {
+                                @include font(40px,600,50px);
                             }
                         }
                         .description {
-                            .logo-wrap {
-                                svg {
-    
-                                }
-                            }
                             p {
                                 padding: 10px 0 15px;
                                 font-size: 20px;
                                 line-height: 30px;
                             }
-                            a {
-                                font-size: 20px;
-                                font-weight: 600;
-                                line-height: 30px;
-                                text-decoration: none;
-                                color: black;
+                            .link-wrap {
+                                a {
+                                    @include font(20px,600,30px);
+                                    text-decoration: none;
+                                    color: black;
+                                }
                             }
                         }
                     }
@@ -325,9 +309,7 @@ body {
                         .block {
                             h3 {
                                 padding-bottom: 20px;
-                                font-size: 20px;
-                                font-weight: 600;
-                                line-height: 25px;
+                                @include font(20px,600,25px);
                             }
                             .link-list {
                                 display: flex;
