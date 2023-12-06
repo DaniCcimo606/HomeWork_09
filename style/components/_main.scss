@@ -187,21 +187,18 @@ body {
                     background-color: #DABC98;
                     .img-wrap {
                         font-size: 0;
-                        img {
-
-                        }
                     }
-                    h2 {
-                        padding: 0 125px 0 65px;
-                        font-size: 35px;
-                        font-weight: 600;
-                        line-height: 50px;
+                    .title-wrap {
+                        h2 {
+                            padding: 0 125px 0 65px;
+                            @include font(35px,600,50px);
+                        }
                     }
                     .main__item--block {
                         display: flex;
                         align-items: center;
                         padding-right: 70px;
-                        .wrap {
+                        .block {
                             height: fit-content;
                             padding: 30px 0 20px 70px;
                             &:first-child {

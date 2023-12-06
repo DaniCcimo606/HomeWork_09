@@ -273,7 +273,7 @@ body .main .container .main__item:nth-child(7) {
 body .main .container .main__item:nth-child(7) .img-wrap {
   font-size: 0;
 }
-body .main .container .main__item:nth-child(7) h2 {
+body .main .container .main__item:nth-child(7) .title-wrap h2 {
   padding: 0 125px 0 65px;
   font-size: 35px;
   font-weight: 600;
@@ -284,18 +284,18 @@ body .main .container .main__item:nth-child(7) .main__item--block {
   align-items: center;
   padding-right: 70px;
 }
-body .main .container .main__item:nth-child(7) .main__item--block .wrap {
+body .main .container .main__item:nth-child(7) .main__item--block .block {
   height: -moz-fit-content;
   height: fit-content;
   padding: 30px 0 20px 70px;
 }
-body .main .container .main__item:nth-child(7) .main__item--block .wrap:first-child {
+body .main .container .main__item:nth-child(7) .main__item--block .block:first-child {
   border-left: 1px solid black;
 }
-body .main .container .main__item:nth-child(7) .main__item--block .wrap .rating {
+body .main .container .main__item:nth-child(7) .main__item--block .block .rating {
   padding: 20px 0 15px 0;
 }
-body .main .container .main__item:nth-child(7) .main__item--block .wrap span {
+body .main .container .main__item:nth-child(7) .main__item--block .block span {
   text-transform: uppercase;
 }
 body .main .container .main__item:nth-child(8) {
