@@ -174,8 +174,8 @@ body .main .container .main__item:nth-child(3) .main__item--block .description a
   display: block;
   font-size: 20px;
   font-weight: 600;
-  text-decoration: none;
   line-height: 30px;
+  text-decoration: none;
   color: black;
 }
 body .main .container .main__item:nth-child(4) {
