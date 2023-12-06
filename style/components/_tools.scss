@@ -19,6 +19,11 @@ body {
     line-height: $lh;
 }
 
+@mixin secondaryFont($fsz, $lh) {
+    font-size: $fsz;
+    line-height: $lh;
+}
+
 @mixin positionCenter {
     position: absolute;
     top: 50%;

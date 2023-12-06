@@ -15,8 +15,7 @@ body {
                             @include font(65px, 600, 70px);
                         }
                         p {
-                            font-size: 25px;
-                            line-height: 35px;
+                            @include secondaryFont(25px,35px);
                         }
                         .link-wrap {
                             a {
@@ -47,8 +46,7 @@ body {
                             span {
                                 display: block;
                                 padding-top: 25px;
-                                font-size: 15px;
-                                line-height: 25px;
+                                @include secondaryFont(15px,25px);
                             }
                         }
                     }
@@ -88,8 +86,7 @@ body {
                                 @include font(50px,600,60px);
                             }
                             p {
-                                font-size: 20px;
-                                line-height: 30px;
+                                @include secondaryFont(20px,30px);
                             }
                             a {
                                 display: block;
@@ -125,8 +122,7 @@ body {
                                 @include font(25px,600,35px);
                             }
                             p {
-                                font-size: 18px;
-                                line-height: 25px;
+                                @include secondaryFont(18px,25px);
                             }
                         }
                     }
@@ -152,8 +148,7 @@ body {
                                 @include font(30px,600,40px);
                             }
                             p {
-                                font-size: 20px;
-                                line-height: 30px;
+                                @include secondaryFont(20px,30px);
                             }
                             a {
                                 display: block;
@@ -170,14 +165,12 @@ body {
                     background-color: #C9E8F2;
                     .main__item--block {
                         p {
-                            font-size: 30px;
-                            line-height: 40px;
+                            @include secondaryFont(30px,40px);
                         }
                         span {
                             display: block;
                             padding: 25px 0 7px;
-                            font-size: 15px;
-                            line-height: 25px;
+                            @include secondaryFont(15px,25px);
                         }
                     }
                 }
@@ -230,8 +223,7 @@ body {
                             width: 70%;
                             margin: 0 auto;
                             text-align: center;
-                            font-size: 25px;
-                            line-height: 30px;
+                            @include secondaryFont(25px,30px);
                         }
                     }
                     .img-wrap {
@@ -261,8 +253,7 @@ body {
                     }
                     p {
                         padding: 30px 0 55px;
-                        font-size: 20px;
-                        line-height: 30px;
+                        @include secondaryFont(20px,30px);
                     }
                     .link-wrap {
                         a {
@@ -291,8 +282,7 @@ body {
                         .description {
                             p {
                                 padding: 10px 0 15px;
-                                font-size: 20px;
-                                line-height: 30px;
+                                @include secondaryFont(20px,30px);
                             }
                             .link-wrap {
                                 a {
