@@ -121,9 +121,6 @@ body {
                             gap: 23px;
                             align-items: center;
                             width: calc(100%/3);
-                            .img-wrap {
-    
-                            }
                             h3 {
                                 @include font(25px,600,35px);
                             }
@@ -136,29 +133,23 @@ body {
                 }
                 &:nth-child(5) {
                     flex-direction: column;
+                    gap: 75px;
+                    align-items: center;
                     padding: 155px 75px;
-                    h2 {
-                        margin: 0 auto;
-                        padding-bottom: 75px;
-                        font-size: 50px;
-                        font-weight: 600;
-                        line-height: 60px;
+                    .title-wrap {
+                        width: fit-content;
+                        h2 {
+                            @include font(50px,600,60px);
+                        }
                     }
                     .block {
                         display: flex;
                         gap: 30px;
                         align-items: center;
                         .main__item--block {
-                            .img-wrap {
-                                img {
-
-                                }
-                            }
                             h3 {
                                 padding: 50px 0 35px 0;
-                                font-size: 30px;
-                                font-weight: 600;
-                                line-height: 40px;
+                                @include font(30px,600,40px);
                             }
                             p {
                                 font-size: 20px;
@@ -187,16 +178,6 @@ body {
                             padding: 25px 0 7px;
                             font-size: 15px;
                             line-height: 25px;
-                        }
-                        .logo-wrap {
-                            svg {
-    
-                            }
-                        }
-                    }
-                    .img-wrap {
-                        svg {
-
                         }
                     }
                 }

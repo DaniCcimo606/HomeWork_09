@@ -216,11 +216,15 @@ body .main .container .main__item:nth-child(4) .block .main__item--block p {
 }
 body .main .container .main__item:nth-child(5) {
   flex-direction: column;
+  gap: 75px;
+  align-items: center;
   padding: 155px 75px;
 }
-body .main .container .main__item:nth-child(5) h2 {
-  margin: 0 auto;
-  padding-bottom: 75px;
+body .main .container .main__item:nth-child(5) .title-wrap {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .main .container .main__item:nth-child(5) .title-wrap h2 {
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
