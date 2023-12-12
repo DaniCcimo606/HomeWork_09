@@ -9,18 +9,20 @@ body {
                     .main__item--block {
                         display: flex;
                         flex-direction: column;
-                        gap: 51px;
                         padding-right: 20px;
                         h2 {
                             @include font(65px, 600, 70px);
                         }
                         p {
                             @include secondaryFont(25px,35px);
+                            padding: 51px 0;
                         }
                         .link-wrap {
+                            display: flex;
+                            padding-bottom: 25px;
                             a {
                                 position: relative;
-                                display: inline-block;
+                                display: block;
                                 width: fit-content;
                                 padding: 30px 80px;
                                 color: black;
@@ -45,6 +47,7 @@ body {
                             }
                             span {
                                 display: block;
+                                width: 100%;
                                 padding-top: 25px;
                                 @include secondaryFont(15px,25px);
                             }

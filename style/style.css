@@ -40,10 +40,26 @@ body .container .header .header__access .header__access--btns-wrap .header__acce
   position: relative;
   display: block;
   padding: 22px 60px;
-  color: black;
-}
-body .container .header .header__access .header__access--btns-wrap #login {
   border: 1px solid black;
+  color: black;
+  overflow: hidden;
+}
+body .container .header .header__access .header__access--btns-wrap .header__access--btn::after {
+  content: "";
+  position: absolute;
+  top: -52px;
+  left: -165px;
+  width: 150px;
+  height: 150px;
+  transform: rotate(-45deg);
+  background-color: #FF6336;
+  transition: all 0.9s ease;
+}
+body .container .header .header__access .header__access--btns-wrap .header__access--btn::before {
+  z-index: 1;
+}
+body .container .header .header__access .header__access--btns-wrap .header__access--btn:hover::after {
+  left: 40px;
 }
 body .container .header .header__access .header__access--btns-wrap #login::before {
   content: "Log in";
@@ -53,9 +69,6 @@ body .container .header .header__access .header__access--btns-wrap #login::befor
   transform: translate(-50%, -50%);
   font-weight: 600;
 }
-body .container .header .header__access .header__access--btns-wrap #register {
-  background-color: #FF6336;
-}
 body .container .header .header__access .header__access--btns-wrap #register::before {
   content: "Try it free";
   position: absolute;
@@ -64,7 +77,6 @@ body .container .header .header__access .header__access--btns-wrap #register::be
   transform: translate(-50%, -50%);
   font-weight: 600;
   white-space: nowrap;
-  color: white;
 }
 
 body .main .container .main__item {
@@ -77,7 +89,6 @@ body .main .container .main__item:nth-child(1) {
 body .main .container .main__item:nth-child(1) .main__item--block {
   display: flex;
   flex-direction: column;
-  gap: 51px;
   padding-right: 20px;
 }
 body .main .container .main__item:nth-child(1) .main__item--block h2 {
@@ -88,10 +99,15 @@ body .main .container .main__item:nth-child(1) .main__item--block h2 {
 body .main .container .main__item:nth-child(1) .main__item--block p {
   font-size: 25px;
   line-height: 35px;
+  padding: 51px 0;
+}
+body .main .container .main__item:nth-child(1) .main__item--block .link-wrap {
+  display: flex;
+  padding-bottom: 25px;
 }
 body .main .container .main__item:nth-child(1) .main__item--block .link-wrap a {
   position: relative;
-  display: inline-block;
+  display: block;
   width: -moz-fit-content;
   width: fit-content;
   padding: 30px 80px;
@@ -123,6 +139,7 @@ body .main .container .main__item:nth-child(1) .main__item--block .link-wrap #de
 }
 body .main .container .main__item:nth-child(1) .main__item--block .link-wrap span {
   display: block;
+  width: 100%;
   padding-top: 25px;
   font-size: 15px;
   line-height: 25px;
