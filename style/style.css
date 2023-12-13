@@ -52,6 +52,22 @@ body .container .header .flex-wrap .header__nav .header__nav--list .header__nav-
   text-decoration: none;
   color: black;
 }
+body .container .header .flex-wrap .header__nav a {
+  position: relative;
+}
+body .container .header .flex-wrap .header__nav a::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  transition: all 0.3s ease;
+  background-color: black;
+}
+body .container .header .flex-wrap .header__nav a:hover::before {
+  width: 100%;
+}
 body .container .header .header__access .header__access--btns-wrap {
   display: flex;
   gap: 10px;
