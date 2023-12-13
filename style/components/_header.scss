@@ -31,30 +31,11 @@ body {
                         position: relative;
                         display: block;
                         padding: 22px 60px;
-                        border: 1px solid black;
                         color: black;
                         overflow: hidden;
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            top: -52px;
-                            left: -165px;
-                            width: 150px;
-                            height: 150px;
-                            transform: rotate(-45deg);
-                            background-color: #FF6336;
-                            transition: all .9s ease;
-                        }
-                        &::before {
-                            z-index: 1;
-                        }
-                        &:hover {
-                            &::after {
-                                left: 40px;
-                            }
-                        }
                     }
                     #login {
+                        border: 1px solid black;
                         &::before {
                             content: 'Log in';
                             @include positionCenter;

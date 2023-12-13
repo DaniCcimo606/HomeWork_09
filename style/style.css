@@ -12,6 +12,26 @@ body {
   display: flex;
 }
 
+#Integrations,
+#register {
+  text-decoration: none;
+  color: white;
+  background-color: #FF6336;
+}
+
+#login,
+#register,
+#demoBuy,
+#Integrations {
+  transition: all 0.1s ease;
+}
+#login:hover,
+#register:hover,
+#demoBuy:hover,
+#Integrations:hover {
+  transform: scale(1.07);
+}
+
 body .container .header {
   display: flex;
   justify-content: space-between;
@@ -40,26 +60,11 @@ body .container .header .header__access .header__access--btns-wrap .header__acce
   position: relative;
   display: block;
   padding: 22px 60px;
-  border: 1px solid black;
   color: black;
   overflow: hidden;
 }
-body .container .header .header__access .header__access--btns-wrap .header__access--btn::after {
-  content: "";
-  position: absolute;
-  top: -52px;
-  left: -165px;
-  width: 150px;
-  height: 150px;
-  transform: rotate(-45deg);
-  background-color: #FF6336;
-  transition: all 0.9s ease;
-}
-body .container .header .header__access .header__access--btns-wrap .header__access--btn::before {
-  z-index: 1;
-}
-body .container .header .header__access .header__access--btns-wrap .header__access--btn:hover::after {
-  left: 40px;
+body .container .header .header__access .header__access--btns-wrap #login {
+  border: 1px solid black;
 }
 body .container .header .header__access .header__access--btns-wrap #login::before {
   content: "Log in";
@@ -345,9 +350,6 @@ body .main .container .main__item:nth-child(8) .link-wrap a {
   padding: 0 20px;
   font-weight: 600;
   line-height: 60px;
-  text-decoration: none;
-  color: white;
-  background-color: #FF6336;
 }
 body .main .container .main__item:nth-child(9) {
   flex-direction: column;
@@ -365,7 +367,7 @@ body .main .container .main__item:nth-child(9) p {
   font-size: 20px;
   line-height: 30px;
 }
-body .main .container .main__item:nth-child(9) .link-wrap a {
+body .main .container .main__item:nth-child(9) .link-wrap #register {
   display: block;
   padding: 0 40px;
   font-size: 17px;

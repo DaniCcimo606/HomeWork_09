@@ -238,9 +238,6 @@ body {
                             padding: 0 20px;
                             font-weight: 600;
                             line-height: 60px;
-                            text-decoration: none;
-                            color: white;
-                            background-color: #FF6336;
                         }
                     }
                 }
@@ -259,7 +256,7 @@ body {
                         @include secondaryFont(20px,30px);
                     }
                     .link-wrap {
-                        a {
+                        #register {
                             display: block;
                             padding: 0 40px;
                             @include font(17px,600,60px);

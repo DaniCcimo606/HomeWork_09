@@ -13,6 +13,23 @@ body {
     display: flex;
 }
 
+#Integrations,
+#register {
+    text-decoration: none;
+    color: white;
+    background-color: #FF6336;
+}
+
+#login,
+#register,
+#demoBuy,
+#Integrations {
+    transition: all .1s ease;
+    &:hover {
+        transform: scale(1.07);
+    }
+}
+
 @mixin font($fsz, $fw, $lh) {
     font-size: $fsz;
     font-weight: $fw;
