@@ -23,6 +23,7 @@ body {
                     }
                     a {
                         position: relative;
+                        font-size: 15px;
                         &::before {
                             content: '';
                             position: absolute;
